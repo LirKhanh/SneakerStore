@@ -213,7 +213,28 @@
             .header-middle .modern {
                 margin: 0;
                 padding: 4rem 0;
-            }</style>
+
+            }
+            .header-contact {
+                display: flex;      /* ép a thành flex giống div */
+                align-items: center;
+            }
+
+            .header-contact .cart-text {
+                font-size: 18px;
+                font-family: Montserrat, sans-serif;
+                font-weight: bold;
+                color: black !important;
+            }
+
+            .header-contact:hover .cart-text {
+                color: #08c !important;
+            }
+
+
+
+
+        </style>
         <div style="
     background-color: #212529;
     height: 70px;
@@ -241,7 +262,7 @@
                         <i class="icon-menu"></i>
                     </button>
                     <a href="/" class="logo">
-                        <img th:src="@{https://i.pinimg.com/736x/a2/7d/70/a27d70f62d7a1d8644baad1403e17c6c.jpg}"
+                        <img th:src="@{https://theme.hstatic.net/1000288768/1000753028/14/home_partner_image_5.jpg?v=4515}"
                              alt="logo">
                     </a>
                 </div><!-- End .header-left -->
@@ -256,16 +277,13 @@
                         </div><!-- End .header-search-wrapper -->
                     </div><!-- End .header-search -->
 
-                    <a href="/tai-khoan/lich-su-giao-dich">
-                        <div class="header-contact d-none d-lg-flex pl-4 ml-3 mr-xl-5 pr-4">
-                            <span class="material-symbols-outlined">
-                            shopping_cart
-                            </span>
-                            <h6 style="margin-left: 3px;font-size: 18px;font-family: Montserrat, sans-serif;
-        font-weight: bold;color: black">Cart<a href="tel:#"
-                              class="text-dark font1"></a>
+                    <a href="/tai-khoan/lich-su-giao-dich" class="header-contact d-none d-lg-flex pl-4 ml-3 mr-xl-5 pr-4">
+    <span class="material-symbols-outlined">
+        shopping_cart
+    </span>
+                        <h6 class="cart-text">
+                            Cart
                         </h6>
-                        </div>
                     </a>
 
                     <a href="" data-toggle="modal" data-target="#exampleModal" class="header-icon account-setting" ><i
