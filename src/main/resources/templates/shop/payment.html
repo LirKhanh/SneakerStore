@@ -58,7 +58,7 @@
                             <div class="size-btn" data-toggle="modal" data-target="#modal-size-Choose">
                                 <button class="btn btn-primary size trans-btn"><span class="size-text">Size</span><span th:data-size="${size}" class="size-details">9US | 42.5VN | 26.2CM</span><i class="fas dropdown-arrow"></i></button>
                             </div>
-                            <div class="input-group" style="margin-top:30px">
+                            <div class="input-group" style="margin-top:30px; display: none" >
                                 <input type="text" class="form-control" placeholder="Nhập mã khuyến mãi" id="in-coupon" th:value="${product.couponCode}">
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="button" id="btn-apply-coupon">Áp dụng</button>
@@ -68,7 +68,7 @@
                                 <div class="text">Tạm tính</div>
                                 <input class="form-control text-price-input" id="in-price" type="text" th:value="${product.price}" readonly/>
                             </div>
-                            <div class="coupon price-include">
+                            <div class="coupon price-include" style="display: none">
                                 <div class="text">Khuyến mãi</div>
                                 <input class="form-control text-price-input" id="in-promotion-value" type="text" readonly/>
                             </div>
